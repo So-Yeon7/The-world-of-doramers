@@ -1,0 +1,65 @@
+body {
+  background-image: url('./images/фон1.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.button-main {
+  background-color: pink;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  width: 220px;
+  text-align: center;
+}
+
+.select-main {
+  background-color: rgb(255, 192, 203);
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#drama-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.drama-card {
+  background-color: white;
+  border: 3px solid pink;
+  border-radius: 20px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.drama-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.watch-button {
+  background-color: pink;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
