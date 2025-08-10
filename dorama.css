@@ -86,3 +86,30 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   text-align: center;
 }
+
+/* Контейнер для селектов Жанр, Страна, Год */
+.selects-row {
+    display: flex;
+    flex-wrap: nowrap;       /* запрещаем перенос на новую строку */
+    gap: 8px;
+    justify-content: center;
+}
+
+/* Стили для каждого селекта */
+.selects-row .select-main {
+    flex: 1 1 auto;           /* позволяет сжиматься при маленьком экране */
+    min-width: 0;             /* чтобы не ломался flex на телефоне */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #000;
+    background-color: #ffc0cb;
+}
+
+/* Чуть уменьшаем на очень маленьких экранах */
+@media (max-width: 360px) {
+    .selects-row .select-main {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
