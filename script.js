@@ -310,3 +310,12 @@ function resetFilters() {
 window.onload = () => {
   document.getElementById("drama-list").innerHTML = "<center><p>Нажмите «Все дорамы», чтобы отобразить список.</p></center>";
 };
+
+document.getElementById("contactBtn").addEventListener("click", function() {
+    const content = document.getElementById("contactContent");
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+});
